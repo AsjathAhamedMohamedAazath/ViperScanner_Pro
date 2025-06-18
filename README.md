@@ -13,10 +13,12 @@
 -  Rich CLI interface
 
 
-## 📦 Requirements
+## Requirements
 
 Install dependencies:
+``` bash
 pip install -r requirements.txt
+```
 
 Tools (optional but recommended):
 --nmap (for advanced scan mode)
