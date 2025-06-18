@@ -21,8 +21,8 @@ pip install -r requirements.txt
 ```
 
 Tools (optional but recommended):
---nmap (for advanced scan mode)
---whois (already handled by Python lib)
+- nmap (for advanced scan mode)
+- whois (already handled by Python lib)
 
 ## Project Structure
 
