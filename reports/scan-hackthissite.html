@@ -1,0 +1,67 @@
+
+    <html>
+    <head>
+        <title>ViperScan Pro Report - www.hackthissite.org</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #0e1117;
+                color: #e5e5e5;
+                padding: 20px;
+                overflow-x: hidden;
+            }
+            h1, h2 {
+                color: #00ffff;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+                word-break: break-word;
+                table-layout: fixed;
+            }
+            th, td {
+                border: 1px solid #444;
+                padding: 10px;
+                text-align: left;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+            }
+            th {
+                background-color: #1f2937;
+            }
+            td {
+                background-color: #111827;
+            }
+            code, pre {
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                overflow-x: auto;
+                display: block;
+                background-color: #1a1a1a;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ViperScan Pro Report</h1>
+        <p><strong>Target:</strong> www.hackthissite.org</p>
+        <p><strong>Date:</strong> 2025-06-19 12:00:55</p>
+
+        <h2>📡 WHOIS & DNS Info</h2>
+        <pre>{&#x27;ip&#x27;: &#x27;137.74.187.101&#x27;, &#x27;dns&#x27;: &#x27;hackthissite.org&#x27;, &#x27;whois&#x27;: {&#x27;domain_name&#x27;: &#x27;hackthissite.org&#x27;, &#x27;registrar&#x27;: &#x27;eNom, LLC&#x27;, &#x27;creation_date&#x27;: &#x27;2003-08-10 15:01:25&#x27;, &#x27;expiration_date&#x27;: &#x27;2025-08-10 15:01:25&#x27;, &#x27;emails&#x27;: &#x27;domainabuse@tucows.com&#x27;}}</pre>
+
+        <h2>🧠 Open Ports</h2>
+        <table>
+            <tr><th>Port</th><th>Service</th><th>Banner</th></tr>
+            <tr><td>25</td><td>SMTP</td><td>421 service not available (connection to blocklisted host (137.74.187.101 - DNSBL))</td></tr><tr><td>80</td><td>HTTP</td><td>HTTP/1.1 301 Moved Permanently
+Content-length: 0
+Location: https://localhost/</td></tr><tr><td>443</td><td>HTTPS</td><td></td></tr>
+        </table>
+
+        <h2>🌐 HTTP Technology Fingerprint</h2>
+        <pre>{&#x27;url&#x27;: &#x27;https://www.hackthissite.org/&#x27;, &#x27;status_code&#x27;: 200, &#x27;headers&#x27;: {&#x27;date&#x27;: &#x27;Thu, 19 Jun 2025 06:30:55 GMT&#x27;, &#x27;upgrade&#x27;: &#x27;h2,h2c&#x27;, &#x27;connection&#x27;: &#x27;Upgrade&#x27;, &#x27;set-cookie&#x27;: &#x27;HackThisSite=grjlv1prlkmvhurcsp1mubn5n1; expires=Fri, 20-Jun-2025 06:30:55 GMT; path=/&#x27;, &#x27;expires&#x27;: &#x27;Thu, 19 Nov 1981 08:52:00 GMT&#x27;, &#x27;cache-control&#x27;: &#x27;no-store, no-cache, must-revalidate, post-check=0, pre-check=0&#x27;, &#x27;pragma&#x27;: &#x27;no-cache&#x27;, &#x27;onion-location&#x27;: &#x27;http://hackthisjogneh42n5o7gbzrewxee3vyu6ex37ukyvdw6jm66npakiyd.onion/&#x27;, &#x27;vary&#x27;: &#x27;Accept-Encoding&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, &#x27;content-length&#x27;: &#x27;12071&#x27;, &#x27;content-type&#x27;: &#x27;text/html&#x27;, &#x27;content-language&#x27;: &#x27;en&#x27;, &#x27;server&#x27;: &#x27;HackThisSite&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-security-policy&#x27;: &quot;child-src &#x27;self&#x27; hackthissite.org *.hackthissite.org htscdn.org *.htscdn.org discord.com; form-action &#x27;self&#x27; hackthissite.org *.hackthissite.org htscdn.org *.htscdn.org; upgrade-insecure-requests; report-uri https://hackthissite.report-uri.com/r/d/csp/enforce&quot;, &#x27;referrer-policy&#x27;: &#x27;origin-when-cross-origin&#x27;, &#x27;x-xss-protection&#x27;: &#x27;0&#x27;, &#x27;feature-policy&#x27;: &#x27;fullscreen *&#x27;, &#x27;public-key-pins-report-only&#x27;: &#x27;pin-sha256=&quot;YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg=&quot;; pin-sha256=&quot;Vjs8r4z+80wjNcr1YKepWQboSIRi63WsWXhIMN+eWys=&quot;; max-age=2592000; includeSubDomains; report-uri=&quot;https://hackthissite.report-uri.com/r/d/hpkp/reportOnly&quot;&#x27;, &#x27;strict-transport-security&#x27;: &#x27;max-age=31536000; includeSubDomains; preload&#x27;, &#x27;report-to&#x27;: &#x27;{&quot;group&quot;:&quot;default&quot;,&quot;max_age&quot;:31536000,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://hackthissite.report-uri.com/a/d/g&quot;}],&quot;include_subdomains&quot;:true}&#x27;, &#x27;nel&#x27;: &#x27;{&quot;report_to&quot;:&quot;default&quot;,&quot;max_age&quot;:31536000,&quot;include_subdomains&quot;:true,&quot;success_fraction&quot;:0.0,&quot;failure_fraction&quot;:0.1}&#x27;}, &#x27;server&#x27;: &#x27;HackThisSite&#x27;, &#x27;powered_by&#x27;: &#x27;Unknown&#x27;}</pre>
+    </body>
+    </html>
+    
