@@ -49,6 +49,9 @@ Flags:
 -o, --output → Save report to specific file
 
 ## Sample Output
+![ViperScan Screenshot](images/result1.png)
+![ViperScan Screenshot](images/result2.png)
+![ViperScan Screenshot](images/result3.png)
 
 ## License
 MIT License. Educational use only. Respect legal boundaries!
