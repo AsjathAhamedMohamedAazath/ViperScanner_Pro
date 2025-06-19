@@ -1,7 +1,7 @@
 from datetime import datetime
 import html
 
-def generate_html_report(target, whois_data, ports, tech_info, output_path):
+def generate_html_report(target, whois_data, ports, tech_info, output_path, nmap_output=None):
     html_content = f"""
     <html>
     <head>
@@ -64,6 +64,9 @@ def generate_html_report(target, whois_data, ports, tech_info, output_path):
 
         <h2>🌐 HTTP Technology Fingerprint</h2>
         <pre>{html.escape(str(tech_info))}</pre>
+
+        <h2>🧪 Nmap Scan Results</h2>
+        <pre>{html.escape(nmap_output) if nmap_output else "Nmap not run or not installed."}</pre>
     </body>
     </html>
     """

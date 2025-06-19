@@ -3,6 +3,7 @@ from modules.port_scanner import run_port_scan
 from modules.http_fingerprint import detect_technologies
 from modules.whois_lookup import get_domain_info
 from modules.report_generator import generate_html_report
+from modules.nmap_scan import run_nmap_scan, is_nmap_installed
 import os
 from datetime import datetime
 
@@ -28,14 +29,19 @@ def main():
     # 3. HTTP(S) Fingerprinting
     tech_info = detect_technologies(target)
 
-    # 4. Report Generation
+    # 4. Optional Nmap Scan
+    nmap_output = None
+    if is_nmap_installed():
+        nmap_output = run_nmap_scan(target)
+
+    # 5. Report Generation
     if args.output:
         output_path = args.output
     else:
         output_path = f"reports/scan-{target.replace('.', '_')}-{timestamp}.html"
         os.makedirs("reports", exist_ok=True)
 
-    generate_html_report(target, whois_data, open_ports, tech_info, output_path)
+    generate_html_report(target, whois_data, open_ports, tech_info, output_path, nmap_output)
 
     print(f"\n[✓] Scan completed. Report saved to: {output_path}\n")
 
