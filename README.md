@@ -11,6 +11,7 @@
 -  HTML report generation
 -  Clean modular Python code
 -  Rich CLI interface
+-  Advanced nmap scan
 
 
 ## Requirements
